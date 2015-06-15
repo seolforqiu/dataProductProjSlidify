@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A/B Test App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A/B Test App">
+  <meta name="author" content="YQ">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>A/B Test App</h1>
+    <h2>An Explaination</h2>
+    <p>YQ<br/>student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction to A/B Test</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>What is A/B test?</h3>
+
+<p>A/B testing is jargon for a randomized experiment with two variants, A and B, which are the control and treatment in the controlled experiment. A/B test is frequently used in online marketing to identify changes to web pages that increase or maximize an outcome of interest.</p>
+
+<h3>Statistical Analysis of This App</h3>
+
+<p>The statistical analysis has been done with a Pearson&#39;s Chi-square test. Yates&#39;s correction for continuity is used to reduce the error in the observed binomial frequency&#39;s approximation to continuous Chi-square distribution The input data is used to contruct a contingency table and that contingency table is used as an input for performing the Chi-square test.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Guideline for Usage</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Input</h3>
+
+<p>To use this App, users are supposed to input the number of objects converted both in the control and treatment group. They also need to input the total number of objects in control and treatment group.</p>
+
+<h3>Output</h3>
+
+<p>Once the &quot;Submit&quot; button is pressed, the App will calculate the conversion rates of both <strong>control</strong> and <strong>treatment</strong> group and show a graphical representation of the converted objects in both groups. It will also tell if the treatment significantly changes the conversion rate.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Demo</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>An online retailer recently developed a new landing page and they want to know this new landing page&#39;s influence upon people&#39;s purchase behavior. The company conducted a test by randomly assigning visitors  to the old (control) and new (treatment) landing pages within certain period of time and collected the ordering data by visitors. 353 of 9985 old landing page visitors clicked their mouses to place an order while 401 of 10008 new landing page visitors clicked their mouses to place an order in this test. The manager wants to know if people are more/less likely or not to place an order when they land at this new landing page when they visit the website.</p>
+
+<table><thead>
+<tr>
+<th>Group</th>
+<th>Control</th>
+<th>Treatment</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Converted</td>
+<td>353</td>
+<td>401</td>
+</tr>
+<tr>
+<td>Nonconverted</td>
+<td>9985</td>
+<td>10008</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Demo (Cont&#39;)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A graphical representation is firstly obtained</p>
+
+<p>The statistical test is performed at \(\alpha\) = 0.05 level</p>
+
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  contTable
+## X-squared = 2.9332, df = 1, p-value = 0.08678
+</code></pre>
+
+<h3>Conclusion</h3>
+
+<p>Treatment group is not significantly ( \(\alpha\)    = 0.05 ) different from control group.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction to A/B Test'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Guideline for Usage'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Demo'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Demo (Cont&#39;)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
